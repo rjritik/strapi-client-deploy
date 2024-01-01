@@ -1,0 +1,27 @@
+ul[class*="pagination"] {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 3rem 0rem -1rem 0rem;
+}
+ul[class*="pagination"] li {
+    margin-bottom: 1rem;
+}
+ul[class*="pagination"] li a {
+}
+
+ul[class*="pagination"] li[class*="disabled"] {
+    display: none;
+}
+
+ul[class*="pagination"] > *:not(li[class*="previous"], li[class*="next"]) {
+    display: none;
+}
+
+/* theme color */
+body[class*="dark-mode"] .projects_wrapper .project_box a[class*="bg-white"] {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite);
+}

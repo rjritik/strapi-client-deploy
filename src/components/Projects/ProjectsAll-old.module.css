@@ -1,0 +1,11 @@
+.projects_wrapper {
+}
+.projects_wrapper .project_box {
+}
+
+/* theme color */
+
+body[class*="dark-mode"] .projects_wrapper .project_box a[class*="bg-white"] {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite);
+}

@@ -1,0 +1,1 @@
+Sitemap: https://your-strapi-domain.com/api/sitemap/index.xml

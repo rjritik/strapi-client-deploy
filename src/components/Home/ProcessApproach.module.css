@@ -1,0 +1,14 @@
+.process_steps {
+}
+
+.process_steps ul {
+    padding-left: 1rem;
+    margin-bottom: 0rem;
+}
+
+/* theme color */
+
+body[class*="dark-mode"] .process_steps div[class*="bg-primary-light1"] {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite);
+}

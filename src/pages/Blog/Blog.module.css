@@ -1,0 +1,18 @@
+ul.blog_categories li a[class*="clicked"] {
+    background-color: var(--colorPrimary) !important;
+    color: var(--colorWhite);
+    pointer-events: none;
+}
+
+.blog_section .post_wrapper div[class*="post"] ~ div[class*="no-result-found"] {
+    display: none;
+}
+
+/* theme color */
+
+body[class*="dark-mode"] ul.blog_categories li a {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+body[class*="dark-mode"] ul.blog_categories li a[class*="clicked"] {
+    background-color: var(--colorBlack) !important;
+}

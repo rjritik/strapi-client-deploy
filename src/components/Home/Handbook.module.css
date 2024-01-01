@@ -1,0 +1,35 @@
+.handbook_section {
+}
+.handbook_section .content_column {
+}
+.handbook_section .content_column a[class*="btn"] svg {
+    margin-top: -5px;
+}
+.handbook_section .book_column {
+    z-index: 1;
+}
+.handbook_section .book_column img {
+    width: 400px;
+}
+.handbook_section .book_column:after {
+    content: "";
+    background-color: var(--colorPrimaryLight1);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .handbook_section .book_column:after {
+        left: calc(var(--bs-gutter-x) * -0.5);
+    }
+}
+
+/* theme color */
+
+body[class*="dark-mode"] .handbook_section .book_column img {
+    /* filter: grayscale(1); */
+}

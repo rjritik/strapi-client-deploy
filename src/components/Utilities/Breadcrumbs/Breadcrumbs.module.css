@@ -1,0 +1,32 @@
+.breadcrumb_section {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+}
+.breadcrumb {
+    font-size: var(--fs-xs);
+}
+.breadcrumb ol {
+    margin-bottom: 0px;
+}
+.breadcrumb ol li {
+    text-transform: capitalize;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+}
+.breadcrumb ol li[class*="active"] {
+    color: var(--colorMuted);
+}
+.breadcrumb ol li:before {
+    font-size: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    float: none !important;
+}
+.breadcrumb ol li a {
+    font-size: inherit;
+    padding: 0px 0px !important;
+}

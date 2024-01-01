@@ -1,0 +1,73 @@
+.saas_projects_section ul[class*="pagination"],
+.saas_projects_section .category_dropdown_row {
+    display: none;
+    transform: scale(0);
+}
+
+.category_dropdown {
+    position: relative;
+}
+.category_dropdown > button {
+}
+.category_dropdown > button:after {
+    content: "";
+    background-image: none;
+    margin: -3px 0px 0px 10px;
+    border: none;
+    border-bottom: 1px solid var(--colorPrimary);
+    border-right: 1px solid var(--colorPrimary);
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+}
+.category_dropdown > div[class*="dropdown-menu"] {
+    text-align: center;
+    border: none;
+    min-width: 200px;
+    position: absolute;
+    top: 50% !important;
+    bottom: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    z-index: 1;
+    transform: translate(-50%, -50%) !important;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.category_dropdown > div[class*="dropdown-menu"] a {
+    background-color: transparent;
+    color: var(--colorPrimary);
+}
+.category_dropdown > div[class*="dropdown-menu"] a:after {
+    content: "";
+    display: inline-block;
+    margin: -3px 0px 0px 10px;
+    border-bottom: 2px solid var(--colorPrimary);
+    border-right: 2px solid var(--colorPrimary);
+    width: 7px;
+    height: 12px;
+    transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.category_dropdown
+    > div[class*="dropdown-menu"]
+    a:not([class*="not-selected"]):after {
+}
+.category_dropdown
+    > div[class*="dropdown-menu"]
+    a:first-child[class*="not-selected"]:after {
+    opacity: 1;
+    visibility: visible;
+}
+.category_dropdown > div[class*="dropdown-menu"] a[class*="clicked"] {
+    pointer-events: none;
+}
+.category_dropdown > div[class*="dropdown-menu"] a[class*="clicked"]:after {
+    opacity: 1;
+    visibility: visible;
+}
+.category_dropdown > div[class*="dropdown-menu"] a:empty {
+    display: none;
+}

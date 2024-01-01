@@ -1,0 +1,72 @@
+.bookshelf_section .bookshelf_header:not(:first-child) {
+    margin-top: 4rem;
+}
+.bookshelf_section .bookshelf_col .bookshelf_item {
+    max-width: 206px;
+}
+.bookshelf_section .bookshelf_col .bookshelf_item figure {
+    margin-bottom: 0.5rem;
+}
+.bookshelf_section .bookshelf_col .bookshelf_item figure img,
+.skeleton_img {
+    border: 3px solid transparent;
+    height: 240px;
+    object-fit: cover;
+}
+.bookshelf_section
+    .bookshelf_row[class*="Business"]
+    .bookshelf_col
+    .bookshelf_item
+    figure
+    img {
+    height: 150px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .bookshelf_section .bookshelf_col .bookshelf_item figure img,
+    .skeleton_img {
+        height: 210px;
+    }
+    .bookshelf_section
+        .bookshelf_row[class*="Business"]
+        .bookshelf_col
+        .bookshelf_item
+        figure
+        img {
+        height: 140px;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .bookshelf_section .bookshelf_header:not(:first-child) {
+        margin-top: 3rem;
+    }
+    .bookshelf_section .bookshelf_header h3 {
+        margin-bottom: 0rem !important;
+    }
+    .bookshelf_section .bookshelf_col .bookshelf_item figure img,
+    .skeleton_img {
+        height: 190px;
+    }
+    .bookshelf_section
+        .bookshelf_row[class*="Business"]
+        .bookshelf_col
+        .bookshelf_item
+        figure
+        img {
+        height: 125px;
+    }
+}
+@media only screen and (max-width: 395px) {
+    .bookshelf_section .bookshelf_col .bookshelf_item figure img,
+    .skeleton_img {
+        height: 48vw;
+    }
+    .bookshelf_section
+        .bookshelf_row[class*="Business"]
+        .bookshelf_col
+        .bookshelf_item
+        figure
+        img {
+        height: 31vw;
+    }
+}

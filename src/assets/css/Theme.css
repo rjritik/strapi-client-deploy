@@ -1,0 +1,10 @@
+[class="dark-mode"],
+[class*="dark-mode"][class*="modal-open"] {
+    --colorPrimary: #161517;
+    --colorPrimaryLight: #a7a7a7;
+    --colorPrimaryHover: rgba(255, 255, 255, 0.9);
+
+    --colorWhite: #000;
+    --colorBlack: #fff;
+    --colorDark: #252525;
+}

@@ -1,0 +1,73 @@
+.masonry_grid {
+    display: block !important;
+    column-count: 3;
+    column-gap: 0px;
+}
+.masonry_grid > * {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px;
+    width: 100%;
+}
+
+.buy_modal {
+    padding-left: 0px !important;
+}
+.buy_modal div[class*="modal-content"] {
+    background: transparent;
+    color: var(--colorWhite);
+    display: table;
+    border: none;
+    width: auto;
+    border-radius: 0px;
+}
+.buy_modal div[class*="modal-dialog"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.buy_modal .popup_img {
+    max-height: calc(100vh - 100px);
+}
+.buy_modal button[class*="btn-close"] {
+    background-size: 50% 50%;
+    margin-top: -12px;
+    margin-bottom: 0px;
+    width: 0.5rem;
+    height: 0.5rem;
+    filter: invert(1);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .masonry_grid {
+        column-count: 2;
+    }
+}
+@media only screen and (max-width: 575.98px) {
+    .masonry_grid {
+        column-count: 1;
+    }
+}
+
+/* theme color */
+
+body[class*="dark-mode"] .masonry_grid div[class*="bg-white"] {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite);
+}
+body[class*="dark-mode"] .masonry_grid div[class*="bg-white"] a {
+    color: var(--colorWhite);
+}
+body[class*="dark-mode"] .buy_modal div[class*="modal-content"] {
+    color: var(--colorBlack);
+}
+body[class*="dark-mode"]
+    .buy_modal
+    div[class*="modal-content"]
+    a[class*="btn-white"] {
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    border-color: var(--colorBlack);
+}

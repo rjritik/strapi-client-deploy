@@ -1,0 +1,52 @@
+div[class*="htmlAccordion"] {
+}
+div[class*="htmlAccordion"] div[class*="accordion-item"] {
+    color: var(--colorPrimary);
+    margin-bottom: 1rem;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    overflow: hidden;
+    border-radius: var(--bs-border-radius-lg);
+}
+div[class*="htmlAccordion"] h2[class*="accordion-header"] {
+    margin-bottom: 0px;
+}
+div[class*="htmlAccordion"] h2[class*="accordion-header"] button {
+    background-color: var(--colorGray);
+    color: var(--colorPrimary);
+    font-weight: inherit;
+    font-size: inherit;
+}
+div[class*="htmlAccordion"] h2[class*="accordion-header"] button:after {
+    background-size: 70%;
+    background-position: center center;
+    opacity: 0.4;
+}
+div[class*="htmlAccordion"] div[class*="accordion-body"] {
+    padding: 1rem 1rem;
+}
+div[class*="htmlAccordion"] div[class*="accordion-body"] a {
+    color: inherit;
+    text-decoration: underline;
+}
+div[class*="htmlAccordion"] div[class*="accordion-body"] ul,
+div[class*="htmlAccordion"] div[class*="accordion-body"] ol {
+    padding-left: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    div[class*="htmlAccordion"] h2[class*="accordion-header"] {
+        font-size: 20px;
+    }
+}
+
+/* theme color */
+body[class*="dark-mode"]
+    div[class*="htmlAccordion"]
+    h2[class*="accordion-header"]
+    button {
+    /* background-color: var(--colorGray2); */
+}
+div[class*="htmlAccordion"] div[class*="accordion-item"] {
+    background-color: transparent;
+    /* color: var(--colorBlack); */
+}

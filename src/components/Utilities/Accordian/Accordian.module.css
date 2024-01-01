@@ -1,0 +1,41 @@
+.accordian {
+}
+.accordian div[class*="accordion-item"] {
+    background-color: transparent;
+    color: var(--colorPrimary);
+}
+.accordian h2[class*="accordion-header"] {
+}
+.accordian h2[class*="accordion-header"] button {
+    background-color: var(--colorGray);
+    color: var(--colorPrimary);
+    font-weight: inherit;
+    font-size: inherit;
+}
+.accordian h2[class*="accordion-header"] button:after {
+    background-size: 70%;
+    background-position: center center;
+    opacity: 0.4;
+}
+.accordian div[class*="accordion-body"] {
+    padding: 1rem 1rem;
+}
+.accordian div[class*="accordion-body"] a {
+    color: inherit;
+    text-decoration: underline;
+}
+.accordian div[class*="accordion-body"] ul,
+.accordian div[class*="accordion-body"] ol {
+    padding-left: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    .accordian h2[class*="accordion-header"] {
+        font-size: 20px;
+    }
+}
+
+/* theme color */
+body[class*="dark-mode"] .accordian div[class*="accordion-item"] {
+    color: var(--colorBlack);
+}

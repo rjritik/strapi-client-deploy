@@ -1,0 +1,42 @@
+.tabs {
+    border: none !important;
+}
+.tabs li {
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.tabs li button {
+    background-color: var(--transparent) !important;
+    font-size: var(--fs-md);
+    color: inherit !important;
+    text-align: left;
+    border: none !important;
+    width: 100%;
+    border-radius: 1rem !important;
+}
+.tabs li button:hover,
+.tabs li button[class*="active"] {
+    background-color: var(--colorPrimaryLight1) !important;
+}
+
+.tabs ~ div[class="tab-content"] {
+    width: 100%;
+}
+.tabs ~ div[class="tab-content"] div[class*="tab-pane"] {
+}
+.tabs ~ div[class="tab-content"] div[class*="tab-pane"][class*="active"] {
+}
+
+.tabs ~ div[class="tab-content"] ul,
+.tabs ~ div[class="tab-content"] ol {
+    padding-left: 18px;
+}
+
+/* theme color */
+
+body[class*="dark-mode"] .tabs li button:hover,
+body[class*="dark-mode"] .tabs li button[class*="active"] {
+    background-color: var(--colorBlack) !important;
+    color: var(--colorWhite) !important;
+}
